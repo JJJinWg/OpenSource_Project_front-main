@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+
+/* 폰트세팅 ///////////////////////////////////////////////////////////////////////*/
+/* 구글폰트 - 영문 */
+/* @import url('http://fonts.googleapis.com/css?family=Montserrat:wght@100,200,300,400,500,600,700,800,900&display=swap'); */
+
+
+/* 나눔스케어 - 국문 */
+/* @font-face {
+  font-family: 'NanumSquare';
+  font-weight:300;
+  src: url('../../../public/font/NanumSquareL.eot');
+  src: local('※'), url('../../../public/font/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+       url('../../../public/font/NanumSquareL.woff') format('woff');
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight:400;
+  src: url('../../../public/font/NanumSquareR.eot');
+  src: local('※'), url('../../../public/font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+       url('../../../public/font/NanumSquareR.woff') format('woff'),
+       url('../../../public/font/NanumSquareR.woff2') format('woff');
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight:700;
+  src: url('../../../public/font/NanumSquareB.eot');
+  src: local('※'), url('../../../public/font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+       url('../../../public/font/NanumSquareB.woff') format('woff');
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight:800;
+  src: url('../../../public/font/NanumSquareEB.eot');
+  src: local('※'), url('../../../public/font/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
+       url('../../../public/font/NanumSquareEB.woff') format('woff');
+} */
+
+
+/* 본고딕 - 국문 */
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 250;
+	src: local('NotoSansKR-Thin'),
+	url('../../../public/font/NotoSans-Thin.eot'),
+	url('../../../public/font/NotoSans-Thin.eot?#iefix') format('embedded-opentype'),
+	url('../../../public/font/NotoSans-Thin.woff') format('woff'),
+	url('../../../public/font/NotoSans-Thin.otf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 300;
+	src: local('NotoSansKR-Light'),
+	url('../../../public/font/NotoSans-Light.eot'),
+	url('../../../public/font/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
+	url('../../../public/font/NotoSans-Light.woff') format('woff'),
+	url('../../../public/font/NotoSans-Light.otf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 350;
+	src: local('NotoSansKR-DemiLight'),
+	url('../../../public/font/NotoSans-DemiLight.eot'),
+	url('../../../public/font/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'),
+	url('../../../public/font/NotoSans-DemiLight.woff') format('woff'),
+	url('../../../public/font/NotoSans-DemiLight.otf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 400;
+	src: local('NotoSansKR-Regular'),
+	url('../../../public/font/NotoSans-Regular.eot'),
+	url('../../../public/font/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../../../public/font/NotoSans-Regular.woff') format('woff'),
+	url('../../../public/font/NotoSans-Regular.otf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 500;
+	src: local('NotoSansKR-Medium'),
+	url('../../../public/font/NotoSans-Medium.eot'),
+	url('../../../public/font/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../../../public/font/NotoSans-Medium.woff') format('woff'),
+	url('../../../public/font/NotoSans-Medium.otf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 700;
+	src: local('NotoSansKR-Bold'),
+	url('../../../public/font/NotoSans-Bold.eot'),
+	url('../../../public/font/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../../../public/font/NotoSans-Bold.woff') format('woff'),
+	url('../../../public/font/NotoSans-Bold.otf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 900;
+	src: local('NotoSansKR-Black'),
+	url('../../../public/font/NotoSans-Black.eot'),
+	url('../../../public/font/NotoSans-Black.eot?#iefix') format('embedded-opentype'),
+	url('../../../public/font/NotoSans-Black.woff') format('woff'),
+	url('../../../public/font/NotoSans-Black.otf') format('truetype');
+}
+
+
+/* Poppins */
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 100;
+src: local('※'), url('../../../public/font/Poppins-Thin.woff') format('woff');
+}
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 200;
+src: local('※'), url('../../../public/font/Poppins-ExtraLight.woff') format('woff');
+}
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+src: local('※'), url('../../../public/font/Poppins-Light.woff') format('woff');
+}
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+src: local('※'), url('../../../public/font/Poppins-Regular.woff') format('woff');
+}
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+src: local('※'), url('../../../public/font/Poppins-Medium.woff') format('woff');
+}
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+src: local('※'), url('../../../public/font/Poppins-SemiBold.woff') format('woff');
+}
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+src: local('※'), url('../../../public/font/Poppins-Bold.woff') format('woff');
+}
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+src: local('※'), url('../../../public/font/Poppins-ExtraBold.woff') format('woff');
+}
+@font-face {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 900;
+src: local('※'), url('../../../public/font/Poppins-Black.woff') format('woff');
+}
+
+
+/* BwGradual Demo */
+@font-face {
+font-family: 'BwGradual';
+font-style: normal;
+font-weight: 200;
+src: local('※'), url('../../../public/font/BwGradualDEMO-Thin.woff') format('woff');
+}
+@font-face {
+font-family: 'BwGradual';
+font-style: normal;
+font-weight: 300;
+src: local('※'), url('../../../public/font/BwGradualDEMO-Light.woff') format('woff');
+}
+@font-face {
+font-family: 'BwGradual';
+font-style: normal;
+font-weight: 400;
+src: local('※'), url('../../../public/font/BwGradualDEMO-Regular.woff') format('woff');
+}
+@font-face {
+font-family: 'BwGradual';
+font-style: normal;
+font-weight: 500;
+src: local('※'), url('../../../public/font/BwGradualDEMO-Medium.woff') format('woff');
+}
+@font-face {
+font-family: 'BwGradual';
+font-style: normal;
+font-weight: 600;
+src: local('※'), url('../../../public/font/BwGradualDEMO-Bold.woff') format('woff');
+}
+@font-face {
+font-family: 'BwGradual';
+font-style: normal;
+font-weight: 700;
+src: local('※'), url('../../../public/font/BwGradualDEMO-ExtraBold.woff') format('woff');
+}
+@font-face {
+font-family: 'BwGradual';
+font-style: normal;
+font-weight: 800;
+src: local('※'), url('../../../public/font/BwGradualDEMO-Black.woff') format('woff');
+}

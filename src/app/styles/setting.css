@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+@import url("jquery-ui.css");
+@import url("animate.css");
+@import url("locomotive-scroll.css");
+
+@import url("font.css");
+@import url("content.css");
+
+/* 초기화 세팅 ******************************************************** */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 사이트 기본구성 */
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  min-width: 320px;
+  word-break: keep-all;
+  /* background: #000; */
+}
+body,
+input,
+textarea,
+select {
+  font-family: "Poppins", "NotoSansKR", "NanumSquareNeo", "Malgun Gothic", "맑은 고딕", "돋움",
+    "Tahoma";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* color: #888; */
+}
+table,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 14px;
+  font-weight: normal;
+}
+legend,
+caption {
+  display: none;
+}
+img,
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+em {
+  font-style: normal;
+}
+i {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  /* color: #888; */
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  /* color: #4285f4; */
+}
+a:active {
+  text-decoration: none;
+  /* color: #4285f4; */
+}
+button {
+  text-decoration: none;
+  /* color: #aaa5b7; */
+  border: none;
+  background: none;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  text-decoration: none;
+  /* color: #4285f4; */
+}
+button:active {
+  text-decoration: none;
+  /* color: #4285f4; */
+}
+/* button:active {border-radius:20%; box-shadow:inset 0 0 8px rgba(0, 0, 0, 0.05);} */
+
+/* 스크롤바 */
+/* html {
+  scrollbar-arrow-color: #fff;
+  scrollbar-track-color: #fff;
+  scrollbar-base-color: #b1b1b1;
+  scrollbar-face-color: #b1b1b1;
+  scrollbar-3dlight-color: #b1b1b1;
+  scrollbar-darkshadow-color: #b1b1b1;
+  scrollbar-highlight-color: #b1b1b1;
+  scrollbar-shadow-color: #b1b1b1;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b1b1b1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b1b1b1;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+}
+
+@media all and (max-width: 479px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 767px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1299px) {
+}
+@media all and (min-width: 1300px) {
+}
+
+/* 폼 기본정의 ******************************************************** */
+/* input 포커스 테두리 삭제 */
+::placeholder {
+  /* color: #999; */
+}
+
+/* input 포커스 테두리 삭제 */
+input:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+/* input 기본 스타일 초기화 */
+input [type="text"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* select 스타일 초기화 */
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* textarea 스타일 초기화 */
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
